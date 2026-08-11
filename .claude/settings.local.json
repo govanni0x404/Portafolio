@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(mkdir -p /c/Proyectos/Portafolio/server/src/routes /c/Proyectos/Portafolio/server/src/controllers /c/Proyectos/Portafolio/server/src/middleware /c/Proyectos/Portafolio/server/src/config)",
+      "Bash(npm init *)",
+      "Bash(npm install *)",
+      "Bash(node src/server.js)",
+      "Bash(curl -s http://localhost:4000/api/health)",
+      "Bash(kill %1)"
+    ]
+  }
+}
