@@ -1,5 +1,5 @@
 import { z } from 'zod'
-import { transporter } from '../config/mailer.js'
+import { getResendClient, FROM_EMAIL } from '../config/mailer.js'
 import { env } from '../config/env.js'
 
 const contactSchema = z.object({
@@ -17,13 +17,16 @@ export async function sendContactMessage(req, res, next) {
   const { name, email, message } = parsed.data
 
   try {
-    await transporter.sendMail({
-      from: env.smtp.user,
+    const { error } = await getResendClient().emails.send({
+      from: FROM_EMAIL,
       to: env.contactTo,
       replyTo: email,
       subject: `Nuevo mensaje de contacto de ${name}`,
       text: `Nombre: ${name}\nEmail: ${email}\n\n${message}`,
     })
+    if (error) {
+      throw new Error(error.message)
+    }
     res.status(200).json({ message: 'Mensaje enviado correctamente' })
   } catch (err) {
     next(err)
