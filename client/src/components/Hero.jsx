@@ -5,13 +5,13 @@ export default function Hero() {
         Desarrollador de Software y Analista Programador
       </p>
       <h1 className="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl dark:text-white">
-        Hola, soy Govanni Fuentes Rosales
+        Hola, soy Govanni Fuentes
       </h1>
       <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600 dark:text-slate-300">
-        Full-stack con experiencia en el ciclo completo de diseño, creación y
-        despliegue de aplicaciones web, móviles y de escritorio.
-        Especializado en PHP, JavaScript, Python y React Native, con foco en
-        resolver problemas lógicos y automatizar flujos de negocio.
+        Desarrollador full-stack con experiencia en sistemas de inventario y
+        ventas, integraciones con máquinas de pago y apps móviles.
+        Trabajo con React, Node.js, Python y React Native, cubriendo el
+        proyecto de principio a fin: desde el diseño hasta el despliegue.
       </p>
       <div className="mt-8 flex justify-center gap-4">
         <a

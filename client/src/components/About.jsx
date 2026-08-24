@@ -25,11 +25,17 @@ const education = {
 
 const skills = [
   'JavaScript',
+  'TypeScript',
   'PHP',
   'Python',
   'Java',
   'SQL (MySQL/PostgreSQL)',
+  'React',
   'React Native (Expo, React Navigation)',
+  'Next.js',
+  'Node.js',
+  'Express',
+  'Prisma',
   'CodeIgniter',
   'Django',
   'Git/GitHub',
@@ -41,10 +47,11 @@ export default function About() {
     <section id="sobre-mi" className="mx-auto max-w-5xl px-6 py-20">
       <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Sobre mí</h2>
       <p className="mt-4 max-w-2xl text-slate-600 dark:text-slate-300">
-        Full-stack con experiencia en el ciclo completo de diseño, creación y
-        despliegue de aplicaciones web, móviles y de escritorio. Especializado
-        en PHP, JavaScript, Python y React Native, con foco en resolver
-        problemas lógicos y automatizar flujos de negocio.
+        Soy desarrollador full-stack y participo en todo el proceso: diseño,
+        desarrollo y despliegue de aplicaciones web, móviles y de escritorio.
+        Empecé trabajando con PHP y Python, y con el tiempo fui sumando
+        React, Node.js y Next.js. Me enfoco en resolver problemas reales y
+        automatizar procesos que le ahorran tiempo al negocio.
       </p>
 
       <a

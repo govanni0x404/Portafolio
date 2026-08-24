@@ -27,13 +27,13 @@ export const projects = [
     repo: 'https://github.com/govanni0x404/Api_Patentes',
   },
   {
-    id: 'prestashop-docker',
-    title: 'PrestaShop con Docker + API',
+    id: 'sistema-inventario',
+    title: 'Sistema de Inventario',
     description:
-      'Instalación de PrestaShop mediante Docker, con APIs propias para crear recursos vía peticiones Postman en XML.',
-    tags: ['Docker', 'PrestaShop', 'API', 'XML'],
+      'Sistema de ventas con control de caja, inventario y precios: gestión de stock, registro de ventas y control administrativo del negocio.',
+    tags: ['React', 'Node.js', 'Express', 'Prisma', 'PostgreSQL'],
     link: '',
-    repo: 'https://github.com/govanni0x404/PrestaShop_8.0.1',
+    repo: 'https://github.com/govanni0x404/Sistema-Inventario',
   },
   {
     id: 'data-shopy',
@@ -46,12 +46,13 @@ export const projects = [
     status: 'En desarrollo',
   },
   {
-    id: 'asistente-whatsapp',
-    title: 'AsistenteWhatsApp',
+    id: 'sistema-reservas',
+    title: 'Sistema de Reservas',
     description:
-      'Bot de WhatsApp para automatizar la atención al cliente de mi negocio: responde automáticamente mediante menú y palabras clave.',
-    tags: ['Node.js', 'WhatsApp API', 'Automatización'],
+      'Sistema de reservas para spas y barberías, hecho con Next.js.',
+    tags: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL'],
     link: '',
-    repo: '',
+    repo: 'https://github.com/govanni0x404/Sistema-Reserva',
+    status: 'En desarrollo',
   },
 ]

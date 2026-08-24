@@ -3,7 +3,13 @@ export const services = [
     id: 'desarrollo-web',
     title: 'Desarrollo Web a Medida',
     description:
-      'Diseño, creación y despliegue de plataformas web completas para gestión administrativa de negocios, con arquitecturas sólidas y de alto rendimiento (PHP/CodeIgniter, PostgreSQL, Bootstrap, entre otros).',
+      'Diseño, creación y despliegue de plataformas web completas para gestión administrativa de negocios, con arquitecturas sólidas y de alto rendimiento (React, Node.js, Next.js, PHP/CodeIgniter, PostgreSQL, entre otros).',
+  },
+  {
+    id: 'sistemas-gestion',
+    title: 'Sistemas de Gestión e Inventario',
+    description:
+      'Sistemas de control de stock, ventas y caja, y plataformas de reservas para negocios (spas, barberías y comercios), construidos con React, Node.js, Express, Prisma y Next.js.',
   },
   {
     id: 'pasarelas-pago',
