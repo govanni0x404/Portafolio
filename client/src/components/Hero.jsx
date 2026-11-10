@@ -8,10 +8,10 @@ export default function Hero() {
         Hola, soy Govanni Fuentes
       </h1>
       <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600 dark:text-slate-300">
-        Desarrollador full-stack con experiencia en sistemas de inventario y
-        ventas, integraciones con máquinas de pago y apps móviles.
-        Trabajo con React, Node.js, Python y React Native, cubriendo el
-        proyecto de principio a fin: desde el diseño hasta el despliegue.
+        Desarrollador full-stack con experiencia en el ciclo completo de
+        diseño, creación y despliegue de aplicaciones web, móviles y
+        soluciones de escritorio. Trabajo con PHP, JavaScript, React,
+        Node.js, React Native y Python.
       </p>
       <div className="mt-8 flex justify-center gap-4">
         <a

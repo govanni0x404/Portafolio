@@ -29,17 +29,25 @@ const skills = [
   'PHP',
   'Python',
   'Java',
-  'SQL (MySQL/PostgreSQL)',
+  'SQL (MySQL, PostgreSQL)',
   'React',
   'React Native (Expo, React Navigation)',
   'Next.js',
+  'HTML5',
+  'CSS3',
+  'Bootstrap',
   'Node.js',
   'Express',
   'Prisma',
   'CodeIgniter',
-  'Django',
-  'Git/GitHub',
-  'Ubuntu Server',
+  'Git (línea de comandos)',
+  'GitHub',
+  'Ubuntu Server e infraestructura local de TI',
+]
+
+const languages = [
+  { name: 'Español', level: 'Nativo' },
+  { name: 'Inglés', level: 'Intermedio en lectura y escritura, básico en conversación' },
 ]
 
 export default function About() {
@@ -53,6 +61,7 @@ export default function About() {
         React, Node.js y Next.js. Me enfoco en resolver problemas reales y
         automatizar procesos que le ahorran tiempo al negocio.
       </p>
+      <p className="mt-2 text-sm text-slate-500 dark:text-slate-400">📍 Talca, Chile</p>
 
       <a
         href="/cv/CV-Govanni-Fuentes.pdf"
@@ -111,6 +120,20 @@ export default function About() {
                 className="rounded-full bg-indigo-50 px-3 py-1 text-xs font-medium text-indigo-700 dark:bg-indigo-500/10 dark:text-indigo-300"
               >
                 {skill}
+              </li>
+            ))}
+          </ul>
+
+          <h3 className="mt-8 text-lg font-semibold text-slate-900 dark:text-white">
+            Idiomas
+          </h3>
+          <ul className="mt-4 space-y-2">
+            {languages.map((language) => (
+              <li key={language.name} className="text-sm text-slate-600 dark:text-slate-300">
+                <span className="font-semibold text-slate-900 dark:text-white">
+                  {language.name}:
+                </span>{' '}
+                {language.level}
               </li>
             ))}
           </ul>

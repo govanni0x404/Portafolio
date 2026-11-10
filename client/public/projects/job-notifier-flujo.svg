@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Segoe UI, system-ui, sans-serif">
+  <style>
+    .t { fill: #e2e8f0; }
+    .m { fill: #94a3b8; }
+    .box { fill: #1e293b; stroke: #334155; stroke-width: 2; }
+    .wire { stroke: #475569; stroke-width: 3; stroke-dasharray: 8 8; fill: none; animation: dash 1s linear infinite; }
+    @keyframes dash { to { stroke-dashoffset: -16; } }
+    .a1 { animation: a1 8s infinite; } .a2 { animation: a2 8s infinite; } .a3 { animation: a3 8s infinite; } .a4 { animation: a4 8s infinite; }
+    @keyframes a1 { 0%, 22% { stroke: #818cf8; } 24%, 100% { stroke: #334155; } }
+    @keyframes a2 { 0%, 24% { stroke: #334155; } 26%, 47% { stroke: #818cf8; } 49%, 100% { stroke: #334155; } }
+    @keyframes a3 { 0%, 49% { stroke: #334155; } 51%, 72% { stroke: #818cf8; } 74%, 100% { stroke: #334155; } }
+    @keyframes a4 { 0%, 74% { stroke: #334155; } 76%, 98% { stroke: #818cf8; } 100% { stroke: #334155; } }
+    .hand { transform-origin: 105px 225px; animation: spin 2s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .drop { animation: drop 8s infinite; }
+    @keyframes drop { 0%, 50% { opacity: 1; } 60%, 100% { opacity: 0.15; } }
+    .env { animation: env 8s infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes env { 0%, 75% { transform: scale(1); } 80% { transform: scale(1.12); } 86%, 100% { transform: scale(1); } }
+    .badge { opacity: 0; animation: badge 8s infinite; }
+    @keyframes badge { 0%, 78% { opacity: 0; } 80%, 98% { opacity: 1; } 100% { opacity: 0; } }
+  </style>
+  <rect width="800" height="500" fill="#0f172a"/>
+  <text x="400" y="50" text-anchor="middle" class="t" font-size="22" font-weight="700">Job Notifier</text>
+  <text x="400" y="76" text-anchor="middle" class="m" font-size="14">Busca ofertas cada día y avisa solo las que calzan con tu perfil</text>
+
+  <!-- 1 cron -->
+  <rect x="20" y="140" width="170" height="210" rx="14" class="box a1"/>
+  <circle cx="105" cy="225" r="42" fill="#0f172a" stroke="#475569" stroke-width="3"/>
+  <line x1="105" y1="225" x2="105" y2="195" stroke="#a5b4fc" stroke-width="4" stroke-linecap="round" class="hand"/>
+  <circle cx="105" cy="225" r="4" fill="#a5b4fc"/>
+  <text x="105" y="300" text-anchor="middle" class="t" font-size="14" font-weight="600">GitHub Actions</text>
+  <text x="105" y="320" text-anchor="middle" class="m" font-size="12">Se ejecuta cada día</text>
+
+  <!-- 2 api -->
+  <rect x="215" y="140" width="170" height="210" rx="14" class="box a2"/>
+  <g class="drop">
+    <rect x="240" y="170" width="120" height="16" rx="4" fill="#334155"/>
+    <rect x="240" y="192" width="120" height="16" rx="4" fill="#334155"/>
+    <rect x="240" y="214" width="120" height="16" rx="4" fill="#334155"/>
+    <rect x="240" y="236" width="120" height="16" rx="4" fill="#334155"/>
+    <rect x="240" y="258" width="120" height="16" rx="4" fill="#334155"/>
+  </g>
+  <text x="300" y="300" text-anchor="middle" class="t" font-size="14" font-weight="600">JSearch API</text>
+  <text x="300" y="320" text-anchor="middle" class="m" font-size="12">Trae ofertas nuevas</text>
+
+  <!-- 3 match -->
+  <rect x="410" y="140" width="170" height="210" rx="14" class="box a3"/>
+  <path d="M445 170 H545 L510 215 V255 L480 268 V215 Z" fill="#0f172a" stroke="#a5b4fc" stroke-width="3" stroke-linejoin="round"/>
+  <text x="495" y="300" text-anchor="middle" class="t" font-size="14" font-weight="600">Match con perfil</text>
+  <text x="495" y="320" text-anchor="middle" class="m" font-size="12">Score 0–100, sin repetidos</text>
+
+  <!-- 4 email -->
+  <rect x="605" y="140" width="175" height="210" rx="14" class="box a4"/>
+  <g class="env">
+    <rect x="642" y="182" width="100" height="70" rx="8" fill="#0f172a" stroke="#a5b4fc" stroke-width="3"/>
+    <path d="M644 186 L692 222 L740 186" fill="none" stroke="#a5b4fc" stroke-width="3"/>
+  </g>
+  <g class="badge">
+    <circle cx="742" cy="182" r="14" fill="#16a34a"/>
+    <text x="742" y="187" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">3</text>
+  </g>
+  <text x="692" y="300" text-anchor="middle" class="t" font-size="14" font-weight="600">Correo (Resend)</text>
+  <text x="692" y="320" text-anchor="middle" class="m" font-size="12">Solo ofertas que calzan</text>
+
+  <path d="M190 245 H215" class="wire"/>
+  <path d="M385 245 H410" class="wire"/>
+  <path d="M580 245 H605" class="wire"/>
+  <text x="400" y="420" text-anchor="middle" class="m" font-size="13">Node.js · GitHub Actions · JSearch API · Resend</text>
+</svg>

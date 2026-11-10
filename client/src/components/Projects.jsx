@@ -1,4 +1,5 @@
 import { projects } from '../data/projects'
+import ImageCarousel from './ImageCarousel'
 
 export default function Projects() {
   return (
@@ -10,6 +11,9 @@ export default function Projects() {
             key={project.id}
             className="rounded-xl border border-slate-200 p-6 dark:border-slate-800"
           >
+            {project.images?.length > 0 && (
+              <ImageCarousel images={project.images} title={project.title} />
+            )}
             <div className="flex items-center justify-between gap-2">
               <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
                 {project.title}
